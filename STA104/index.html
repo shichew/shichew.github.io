@@ -10,16 +10,33 @@
   </head>
   <body>
     <section class="page-header">
-	    <h1 class="project-name"><center>STA 104</center></h1>
+	    <h1 class="project-name"><center>STA 104 Project</center></h1>
 	    <h3> Nonparametric Statistics | Spring 2015</h3>
-
-
     </section>
 
     <section class="main-content">
-	    <h3>Class Description</h3>
-	    <p></p>
-	    <h3>Projects</h3>
+	    <h3>Analysis of Presidential Approval Factors</h3>
+	    <p><a href="STA 104 Project.pdf">PDF for Project</a></p>
+	    <p>In this project, I looked into three questions of interest: </p>
+	    <ol>
+		    <li>Is there a significant difference in GDP (per billion of dollars) between democratic and republican presidents?</li>
+		    <li>Which two quarters have the greatest difference in approval ratings?</li>
+		    <li>Is an increase in GDP positively associated with higher presidential approval ratings?</li>
+	    </ol>
+	    <p>To answer the first question, I used   a two sample permutation test with alpha = 0.05, to find the difference in GDP between democratic 
+		    and republican presidents. I conclude that there is enough evidence
+		    to say that when the president from the democratic party, the GDP is significantly larger than when 
+		    the president is republican.</p>
+	    <p>To answer the second question of which quarter has the strongest association with approval ratings, I used 
+		    the permutation F-test with alpha = 0.05 to find if there was a difference in means of approval ratings within the quarters and and 
+		    conclude that there is not enough evidence to conclude that not all approval ratings in each quarter are equal. To check if there 
+		    are differences between quarters, I applied Tukey HSD permutation test which shows that there is no significant difference of 
+		    approval ratings between the four quarters. All quarters have approximately the same approval ratings.</p>
+	    <p>To see if higher GDP is positively correlated to higher presidential approval ratings, I assigned GDP as the predictor 
+		    variable and approval rating as the response. I first found the Pearson's correlation coefficient. As GDP decreases,
+		    presidential approval decreases too. The Kendall's tau permutation test was used because it was not based on normality
+		    assumption of approval ratings.  It implies almost no association, so pairs are equally likely to be discordant or 
+		    concordant. Therefore, GDP has no association with presidential approval ratings. </p>
     </section>
   </body>
 </html>
